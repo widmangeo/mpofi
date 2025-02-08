@@ -30,7 +30,7 @@ func startTicker() {
 	defer ticker.Stop()
 
 	for range ticker.C {
-		resp, err := http.Get("http://67a5eb37c8b283181c3e.appwrite.global/")
+		resp, err := http.Get("http://67a5eb37c8b283181c3e.appwrite.global")
 		if err != nil {
 			log.Println("Error visiting URL:", err)
 			continue
